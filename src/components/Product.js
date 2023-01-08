@@ -7,6 +7,12 @@ class Product extends React.Component {
                 <img src={this.props.productImageUrl} alt='hello'></img>
             </div> 
             <div className = 'middle aligned content' >
+                <div className='header'>
+                    <a>
+                        <i className='icon caret up large'></i>
+                    </a>
+                    {this.props.votes}
+                </div>
                 <div className = 'description' >
                     <a >{this.props.title} </a> <p > {this.props.description} </p> 
                 </div > 
@@ -21,3 +27,4 @@ class Product extends React.Component {
 }
 
 export default Product;
+
