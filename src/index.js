@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import Product from './components/Product';
-
-import ProductList from './components/SampleComponent';
+import ProductList from './components/ProductList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( <
-    ProductList / >
+root.render( <div className = "ui unstackable items" >
+        <Product />
+        <Product />
+        <Product />
+    </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
