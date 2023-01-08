@@ -10,8 +10,8 @@ import Product from "./Product";
 // export default ProductList;
 
 function ProductList() {
-    return ( <
-        h1 > hello from component < /h1>
+    return(
+        <h1>hello from component</h1>
     );
 }
 export default ProductList;

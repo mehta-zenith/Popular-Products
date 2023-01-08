@@ -5,8 +5,6 @@ import ProductList from './components/ProductList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( <div className = "ui unstackable items" >
-        <Product />
-        <Product />
-        <Product />
+        <ProductList />
     </div>
 );
