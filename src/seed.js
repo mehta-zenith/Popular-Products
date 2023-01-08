@@ -23,7 +23,7 @@ const Seed = (function() {
         description: 'A short description about Product Two which will describe what the product does!',
         url: '#',
         votes: generateVoteCount(),
-        submittedAvatarUrl: 'images/avatars/kristy.jpg',
+        submittedAvatarUrl: 'images/avatars/kristy.png',
         productImageUrl: 'images/products/image-rose.png'
       },
       {

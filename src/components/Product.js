@@ -16,7 +16,7 @@ class Product extends React.Component {
             </div> 
             <div className = 'middle aligned content' >
                 <div className='header'>
-                    <a onClick={this.handleUpVote}>
+                    <a  href='#' onClick={this.handleUpVote}>
                         <i className='icon caret up large'></i>
                     </a>
                     {this.props.votes}
