@@ -9,20 +9,27 @@ import Seed from "../seed";
 
 class ProductList extends React.Component {
     render() {
-        const product = Seed.products[0];
+        // const product = Seed.products[0];
+
+        const products = Seed.products.sort((product1,product2) => product2.votes - product1.votes)
+        const productComponents = Seed.products.map((product) => (
+            <Product 
+            key={product.id} // ye daala ku ki diffing algo pata chalega jab same components aaye toh har ek ka key alag ho toh difference samjega
+            id = {product.id}
+            title = {product.title}
+            description = {product.description}
+            url = {product.url}
+            votes = {product.votes}
+            submittedAvatarUrl = {product.submittedAvatarUrl}
+            productImageUrl = {product.productImageUrl}
+            
+            />
+        ));
+        console.log(productComponents);
 
         return(
             <div className="ui unstackable items">
-                <Product 
-                id = {product.id}
-                title = {product.title}
-                description = {product.description}
-                url = {product.url}
-                votes = {product.votes}
-                submittedAvatarUrl = {product.submittedAvatarUrl}
-                productImageUrl = {product.productImageUrl}
-                
-                />
+              {productComponents}
             </div>
         )
     }
